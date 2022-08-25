@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [DistributedParallel]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="2" parallel="tests" name="TestRunner2(failed)">
+    <classes>
+      <class name="com.AdminModule2TestCasess.RegisterIndividualRoomAndVerifyInListPage">
+        <methods>
+          <include name="configureBS"/>
+          <include name="register"/>
+          <include name="configureAM"/>
+          <include name="configureBM"/>
+          <include name="configureAS"/>
+          <include name="configureAc"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AdminModule2TestCasess.RegisterIndividualRoomAndVerifyInListPage -->
+      <class name="com.AdminModule2TestCasess.RegisterAppartmentAndVerifyInDetailsPage">
+        <methods>
+          <include name="configureBS"/>
+          <include name="configureAM"/>
+          <include name="appartment"/>
+          <include name="configureBM"/>
+          <include name="configureAS"/>
+          <include name="configureAc"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AdminModule2TestCasess.RegisterAppartmentAndVerifyInDetailsPage -->
+    </classes>
+  </test> <!-- TestRunner2(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner1(failed)">
+    <classes>
+      <class name="com.AdminModule2TestCasess.RegisterComplaintOnAnyOwnerAndVeriflyInComplaintList">
+        <methods>
+          <include name="configureBS"/>
+          <include name="configureAM"/>
+          <include name="configureBM"/>
+          <include name="complaint"/>
+          <include name="configureAS"/>
+          <include name="configureAc"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AdminModule2TestCasess.RegisterComplaintOnAnyOwnerAndVeriflyInComplaintList -->
+      <class name="com.AdminModule2TestCasess.RegisterRoomASOccupiedAndVeriflyInDetailsList">
+        <methods>
+          <include name="configureBS"/>
+          <include name="configureAM"/>
+          <include name="configureBM"/>
+          <include name="details"/>
+          <include name="configureAS"/>
+          <include name="configureAc"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AdminModule2TestCasess.RegisterRoomASOccupiedAndVeriflyInDetailsList -->
+    </classes>
+  </test> <!-- TestRunner1(failed) -->
+</suite> <!-- Failed suite [DistributedParallel] -->
